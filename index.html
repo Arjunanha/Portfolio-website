@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devices-width, initial -scale=1.0">
+        <title>My portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Arjunreddy.M</h1>
+            <p>Welcome to my portfolio website!</p>
+        </header>
+        <header>
+            <h1>My Portfolio</h1>
+            <nav>
+                <a href="#about">About</a> |
+                <a href="#projects">Projects</a> |
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+        <section id="about">
+            <h2> About me</h2>
+            <p>my name is arjunreddy, i'm a videoeditor , i can edit youtube shorts and instagram reels,e.t.c</p>
+            <button onclick="showMessage()">Click Me</button>
+         </section>
+        <!-- Projects Section -->
+<section id="projects">
+    <h2>Projects</h2>
+    <button onclick="toggleProjects()">Show/Hide Projects</button> <!-- New Button -->
+    <div id="project-list">
+        <p>Here are some of the projects I have worked on:</p>
+        <div class="project-card">
+            <h3>Project Title</h3>
+            <p>Description of the project.</p>
+        </div>
+    </div>
+</section>
+        <!-- Contact Me Section -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>If you'd like to get in touch, please fill out the form below:</p>
+    
+    <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        
+        <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+</section>
+        <script src="script.js"></script>
+ </body>
+</html>
